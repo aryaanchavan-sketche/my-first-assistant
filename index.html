@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aryan Lakshmi P.A.I.A - Machine-Man Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blackhole-bg"></div>
+    <div class="container">
+        <div class="avatar">
+            <div class="face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+        <div class="binary-stream" id="binary"></div>
+        <div class="chatbox">
+            <div id="chatlog"></div>
+            <input type="text" id="userInput" placeholder="Type your command..." autofocus>
+            <button onclick="sendMessage()">Send</button>
+            <button id="micBtn" title="Speak"><span role="img" aria-label="mic">🎤</span></button>
+        </div>
+        <div id="aiDetails" style="margin-top:1rem; color:#4f8cff;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

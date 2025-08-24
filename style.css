@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    overflow: hidden;
+}
+.blackhole-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: radial-gradient(circle at 50% 50%, #222 0%, #000 80%);
+    z-index: 0;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    margin: 60px auto;
+    background: rgba(20,20,30,0.85);
+    border-radius: 16px;
+    box-shadow: 0 0 40px #000;
+    padding: 2rem;
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.face {
+    width: 120px; height: 120px;
+    background: #222;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 40px #4f8cff;
+}
+.eye {
+    width: 20px; height: 20px;
+    background: #4f8cff;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+}
+.eye.left { left: 30px; }
+.eye.right { right: 30px; }
+.mouth {
+    width: 40px; height: 10px;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    bottom: 30px; left: 40px;
+}
+.binary-stream {
+    font-family: 'Consolas', monospace;
+    font-size: 1.1rem;
+    color: #4f8cff;
+    height: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.chatbox {
+    background: #181828;
+    border-radius: 8px;
+    padding: 1rem;
+}
+#chatlog {
+    min-height: 120px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+#userInput {
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+}
+button {
+    padding: 0.5rem 1rem;
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background: #357ae8;
+}
